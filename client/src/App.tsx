@@ -1,13 +1,13 @@
 import './App.css'
-import CreateBoardButton from './components/buttons/CreateBoardButton'
+import { Router } from "./router";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-
   return (
-    <>
-      <CreateBoardButton />
-    </>
-  )
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+  );
 }
 
 export default App

@@ -1,8 +1,16 @@
-function CreateBoardButton() {
+import { useNavigate } from "react-router-dom";
+
+const CreateBoardButton = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/board");  
+  };
+
 
   return (
     <>
-      <button> 
+      <button onClick={handleClick}> 
         Create
       </button>
     </>
